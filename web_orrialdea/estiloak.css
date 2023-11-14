@@ -1,50 +1,84 @@
 body {
-    background-image: url(irudiak/imagen\ de\ fondo\ de\ pagina.jpg); 
-    
-    filter: hue-rotate();
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff0000, #2a5298);
 }
 
-.span1 {
-    background-color: rgba(255, 255, 255, 0.73);
-    border-radius: 2em;
-    
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    background: linear-gradient(to right, #ff0000, #2a5298);
+
 }
 
-.span1:hover {
-    
-    filter: hue-rotate(45 deg);
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 1em 0em;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    padding: 20px;
+}
+
+.klase1{
+    padding:20px;
+    margin-top:30px;
+    height: 450px;
+    background-image: url(irudiak/imagen\ de\ fondo\ de\ pagina.jpg);
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    background-size: 100%;
+    transition: 1s;
+
+
+}
+
+.klase1:hover{
+    padding:20px;
+    margin-top:30px;
+    height: 450px;
+    background-image: url(irudiak/imagen\ de\ fondo\ de\ pagina.jpg);
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    background-size: 100%;
     transition: 1s;
 }
 
-.span2{
-    background-color: rgba(255, 255, 255, 0.73);
-    border-radius: 2em;
-    padding: 1em;
-    height: 20em;
+.klase1 h1{
+    opacity: 100%;
 }
 
-
-img {
-    width: 5em;
-    margin-left: .2em;
-}
-
-hr {
-    height: .25em;
-    background-color: black ;
-        
-}
-
-button {
-    background-color: rgb(197, 197, 197);
-    border-radius: 1em;
-    padding: 1em;
+.klase2{
+    display: block;
+    height: 90px;
+    width: 95%;
+    background-color: aqua;
     
 }
 
-button:hover {
-    background-color: rgb(156, 156, 156);
-    border-radius: 1em;
-    padding: 1em;
-}
+
+
+
+
+
 
