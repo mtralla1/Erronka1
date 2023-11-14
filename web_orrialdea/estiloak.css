@@ -46,7 +46,6 @@ body {
     background-size: 100%;
     transition: 1s;
 
-
 }
 
 .klase1:hover{
@@ -64,15 +63,19 @@ body {
     transition: 1s;
 }
 
-.klase1 h1{
-    opacity: 100%;
-}
-
 .klase2{
-    display: block;
-    height: 90px;
+    padding:20px;
+    margin-top:650px;
+    height: 450px;
+    background-image: url(irudiak/imagen\ de\ fondo\ de\ pagina.jpg);
     width: 95%;
-    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    background-size: 100%;
+    transition: 1s;
     
 }
 
