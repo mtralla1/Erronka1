@@ -13,9 +13,9 @@ services:
     ports:
       - "8069:8069"
   nginx:
-    image: nginx
+    build: https://github.com/mtralla1/Erronka1.git
     volumes:
-      - ./web:/usr/share/nginx/html
+      - ./web_orrialdea:/usr/share/nginx/html
     ports:
       - "8080:80"
     environment:
