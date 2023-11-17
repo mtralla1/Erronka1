@@ -7,15 +7,13 @@ services:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
   odoo:
-    image: odoo:16.0
+    image: odoo:latest
     depends_on:
       - db
     ports:
       - "8069:8069"
   nginx:
     build: https://github.com/mtralla1/Erronka1.git
-    volumes:
-      - ./web_orrialdea:/usr/share/nginx/html
     ports:
       - "8080:80"
     environment:
