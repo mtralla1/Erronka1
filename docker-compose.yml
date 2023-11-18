@@ -1,23 +1,68 @@
 version: '3.1'
 services:
+  duplicati:
+    image: lscr.io/linuxserver/duplicati:latest
+    container_name: duplicati
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Europe/Madrid
+    volumes:
+      - /root/odoo/Erronka1/config:/config
+      - /root/odoo/Erronka1/backups:/backups
+      - /root/odoo/Erronka1:/source
+    ports:
+      - 8200:8200
+    restart: unless-stopped
   db:
     image: postgres:15
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
   odoo:
     image: odoo:16.0
     depends_on:
       - db
     ports:
       - "8069:8069"
+    volumes:
+      - odoo-web-data:/var/lib/odoo
   nginx:
     image: nginx
     volumes:
-      - ./web:/usr/share/nginx/html
+      - ./web_orrialdea:/usr/share/nginx/html
     ports:
       - "8080:80"
     environment:
       - NGINX_HOST=foobar.com
       - NGINX_PORT=80
+volumes:
+  odoo-web-data:
+    driver: local
+    driver_opts:
+      typer: none
+      o: bind
+      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
+  odoo-db-data:
+    driver: local
+    driver_opts: 
+      type: none
+      o: bind
+      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
+
+  duplicati-backups:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
+  
+  duplicati-source:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
