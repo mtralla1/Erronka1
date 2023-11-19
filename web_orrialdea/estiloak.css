@@ -140,7 +140,7 @@ body{
 }
 
 .div2:hover {
-    background-color: violet;
+    background-color: rgb(162, 201, 157);
     width: 90%;
     height: fit-content;
     margin: 90px auto;
@@ -179,9 +179,9 @@ body{
 }
 
 .div2 p img{
-    margin-left: 40%;
+    margin-left: 10%;
     border-radius: 2em;
-    width: 25%; 
+    width: 80%; 
 }
 
 /*div2ren amaiera*/
@@ -218,10 +218,11 @@ footer:hover {
   background-color: beige;
   margin: 0 auto;
   margin-top: 17vh;
-  margin-bottom: 30vh;
+  margin-bottom: 60vh;
   border: 1px solid black;
   box-shadow: 0px 0px 10px 2px gray;
   font-size: 1.3em;
+
 }
 
 input[type=text], input[type=email], textarea {
@@ -240,7 +241,6 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -302,11 +302,16 @@ button:hover {
 
 
 /*Responsive diseinuaren hasiera*/
-@media screen and (min-width: 480px) {
+    
+@media only screen and (max-width: 736px)
+
+{
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: beige;
+
     }
     
     .header {
@@ -320,14 +325,6 @@ button:hover {
     
     #beherajoan{
         text-decoration: none;
-    }
-    
-    .header:hover {
-        background-color: #333;
-        color: #fff;
-        padding: 1em;
-        height: fit-content;
-        text-align: center;
     }
     
     .header img{
@@ -347,16 +344,6 @@ button:hover {
         border-radius: 0 0 30em 30em;
     }
     
-    .nav:hover {
-        background-color: #444;
-        overflow: hidden;
-        border-radius: 1em, 0;
-        height: 6vh;
-        vertical-align: auto;
-        transition: 1s;
-        position: relative;
-        border-radius: 0 0 30em 50em;
-    }
     
     .nav a {
         float: right;
@@ -368,16 +355,6 @@ button:hover {
         border-radius: 0 0 2em 2em;
         transition: 1s;
         font-size: 1.3em;
-    }
-    
-    .nav a:hover {
-        background-color: #ddd;
-        color: #333;
-        transition: 1s;
-    }
-    
-    body{
-        background-color: beige;
     }
     
     .div1 {
@@ -392,16 +369,6 @@ button:hover {
         background-image: url(irudiak/background\ irudia.jfif);
     }
     
-    .div1:hover {
-        background-color: rgb(255, 230, 161);
-        width: 91%;
-        height: 70vh;
-        margin: 20px auto;
-        border-radius: 0em 20em 0em 20em;
-        border-color: black;
-        border-style: dashed;
-        transition: 1s;
-    }
     
     .div1 h1{
         text-align: center;
@@ -419,24 +386,12 @@ button:hover {
     
     .div2 {
         background-color: rgb(255, 206, 206);
-        width: 90%;
+        width: 80%;
         height: fit-content;
         margin: 90px auto;
         border-radius: 1em;
         transition: 1s;
         padding: 3em;
-        transition: 1s;
-    }
-    
-    .div2:hover {
-        background-color: violet;
-        width: 90%;
-        height: fit-content;
-        margin: 90px auto;
-        border-radius: 3em;
-        transition: 1s;
-        padding: 3em;
-        border: 2px solid black;
         transition: 1s;
     }
     
@@ -458,7 +413,7 @@ button:hover {
     
     .div2 p{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 1.5em;
         width: 90%;
         padding: 1em;
@@ -468,440 +423,9 @@ button:hover {
         margin-left: 40%;
         border-radius: 2em;
         width: 25%; 
+
+    
     }
     
-    /* Media queries */
-    @media screen and (max-width: 700px) {
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            height: fit-content;
-            text-align: center;
-            transition: 1s;
-        }
-        
-        #beherajoan{
-            text-decoration: none;
-        }
-        
-        .header:hover {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            height: fit-content;
-            text-align: center;
-        
-        }
-        
-        .header img{
-            width: 90vw;
-            opacity: 50%;
-            border-radius: 3%;
-        }
-        
-        
-        .nav {
-            background-color: #444;
-            overflow: hidden;
-            border-radius: 1em, 0;
-            height: 6vh;
-            vertical-align: auto;
-            transition: 1s;
-            position: relative;
-            border-radius: 0 0 30em 30em;
-            
-        }
-        
-        .nav:hover {
-            background-color: #444;
-            overflow: hidden;
-            border-radius: 1em, 0;
-            height: 6vh;
-            vertical-align: auto;
-            transition: 1s;
-            position: relative;
-            border-radius: 0 0 30em 50em;
-        }
-        
-        
-        .nav a {
-            float: right;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            border-radius: 0 0 2em 2em;
-            transition: 1s;
-            font-size: 1.3em;
-                
-        }
-        
-        .nav a:hover {
-            background-color: #ddd;
-            color: #333;
-            transition: 1s;
-        }
-        
-        
-        body{
-            background-color: beige;
-        }
-        
-        
-        /*div1ren hasiera*/
-        .div1 {
-            background-color: rgb(255, 203, 60);
-            width: 91%;
-            height: 70vh;
-            margin: 20px auto;
-            border-radius: 20em 0 20em 0;
-            border-color: rgb(255, 255, 255);
-            border-style: dotted;
-            transition: 1s;
-            background-image: url(irudiak/background\ irudia.jfif);
-        
-        }
-        
-        .div1:hover {
-            background-color: rgb(255, 230, 161);
-            width: 91%;
-            height: 70vh;
-            margin: 20px auto;
-            border-radius: 0em 20em 0em 20em;
-            border-color: black;
-            border-style: dashed;
-            transition: 1s;
-        
-        }
-        
-        .div1 h1{
-            text-align: center;
-            padding: 1.3em;
-            color: white;
-            font-size: 4em;
-        
-        }
-        
-        .div1 h2{
-            text-align: center;
-            padding: 1.3em;
-            color: white;
-            font-size: 2em;
-            
-        
-        }
-        /*div1ren amaiera*/
-        
-        
-        /*div2ren hasiera*/
-        .div2 {
-            background-color: rgb(255, 206, 206);
-            width: 90%;
-            height: fit-content;
-            margin: 90px auto;
-            border-radius: 1em;
-            transition: 1s;
-            padding: 3em;
-            transition: 1s;
-        }
-        
-        .div2:hover {
-            background-color: violet;
-            width: 90%;
-            height: fit-content;
-            margin: 90px auto;
-            border-radius: 3em;
-            transition: 1s;
-            padding: 3em;
-            border: 2px solid black;
-            transition: 1s;
-        }
-        
-        .div2 h1,h2{
-            text-align: center;
-            
-        }
-        
-        .div2 ul li{
-            margin-top: 2em;
-            color: rgb(0, 0, 0);
-            margin-bottom: 10px;
-            font-size: 1em;
-            
-        }
-        
-        .div2 ul {
-            
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .div2 p{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: black;
-            font-size: 1.5em;
-            width: 90%;
-            padding: 1em;
-        }
-        
-        .div2 p img{
-            margin-left: 40%;
-            border-radius: 2em;
-            width: 25%; 
-        }
-        
-        /*div2ren amaiera*/
-        
-        
-        
-        /*Footer-aren hasiera*/
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            bottom: 0;
-            border-radius:2em 2em 0px 0px;
-            transition: 1s;
-        }
-        
-        footer:hover {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            bottom: 0;
-            border-radius: 5em 5em 0px 0px;
-            transition: 1s;
-        }
-        /*Footer-aren amaiera*/
-        
-        
-        /*Kontaktu formularioaren zatia*/
-        .container {
-          width: 50vw;
-          padding: 16px;
-          background-color: beige;
-          margin: 0 auto;
-          margin-top: 17vh;
-          margin-bottom: 30vh;
-          border: 1px solid black;
-          box-shadow: 0px 0px 10px 2px gray;
-          font-size: 1.3em;
-        }
-        
-        input[type=text], input[type=email], textarea {
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          box-sizing: border-box;
-          font-size: 1em;
-        }
-        
-        button {
-          background-color: black;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          cursor: pointer;
-          width: 100%;
-        }
-        
-        button:hover {
-          opacity: 0.8;
-        }
-        /*Kontaktu formularioaren zatiaren amaiera*/
-        
-        
-        /*ERP-CRM-ak.html ren sarrera*/
-        .erp-crm-ak-h1 h1{
-            text-align: center;
-            font-size: 3em;
-            text-decoration: underline;
-        }
-        
-        .erp-crm-ak-div{
-            background-color: rgb(231, 225, 225);
-            border-radius: 4%;
-            margin: 4%;
-            padding: 2%;
-            
-        }
-        
-        .flexbox-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 80%;
-            height:fit-content;
-            border-radius: 3em;
-            background-color: #c7d7e9;
-            margin: auto;
-            overflow: hidden;
-            margin-top: 2%;
-            position: relative;
-            padding: 5%;
-        
-        }
-        
-        .flexbox-container h1{
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 3em;
-        }
-        
-        .flexbox-container p{
-            color: rgb(255, 255, 255);
-            font-size: 1.5em;
-            text-align: right;
-        }
-        
-        .flexbox-container img {
-            width: 250px;
-            border-radius: 3em;
-            position: relative;
-            text-align: right;
-        }
-        
-        @media screen and (max-width : 768px) {
-            
-
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .header {
-                background-color: #333;
-                color: #fff;
-                padding: 1em;
-                height: fit-content;
-                text-align: center;
-                transition: 1s;
-            }
-            
-            #beherajoan{
-                text-decoration: none;
-            }
-            
-            .header img{
-                width: 90vw;
-                opacity: 50%;
-                border-radius: 3%;
-            }
-            
-            .nav {
-                background-color: #444;
-                overflow: hidden;
-                border-radius: 1em, 0;
-                height: 6vh;
-                vertical-align: auto;
-                transition: 1s;
-                position: relative;
-                border-radius: 0 0 30em 30em;
-            }
-            
-            
-            .nav a {
-                float: right;
-                display: block;
-                color: #fff;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                border-radius: 0 0 2em 2em;
-                transition: 1s;
-                font-size: 1.3em;
-            }
-            
-
-            
-            body{
-                background-color: beige;
-            }
-            
-            .div1 {
-                background-color: rgb(255, 203, 60);
-                width: 91%;
-                height: 70vh;
-                margin: 20px auto;
-                border-radius: 5em;
-                border-color: rgb(255, 255, 255);
-                border-style: dotted;
-                transition: 1s;
-                background-image: url(irudiak/background\ irudia.jfif);
-            }
-            
-            
-            .div1 h1{
-                text-align: center;
-                padding: 1.3em;
-                color: white;
-                font-size: 4em;
-            }
-            
-            .div1 h2{
-                text-align: center;
-                padding: 1.3em;
-                color: white;
-                font-size: 2em;
-            }
-            
-            .div2 {
-                background-color: rgb(255, 206, 206);
-                width: 80%;
-                height: fit-content;
-                margin: 90px auto;
-                border-radius: 1em;
-                transition: 1s;
-                padding: 3em;
-                transition: 1s;
-            }
-            
-            .div2 h1,h2{
-                text-align: center;
-            }
-            
-            .div2 ul li{
-                margin-top: 2em;
-                color: rgb(0, 0, 0);
-                margin-bottom: 10px;
-                font-size: 1em;
-            }
-            
-            .div2 ul {
-                list-style: none;
-                padding-left: 0;
-            }
-            
-            .div2 p{
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: rgb(255, 255, 255);
-                font-size: 1.5em;
-                width: 90%;
-                padding: 1em;
-            }
-            
-            .div2 p img{
-                margin-left: 40%;
-                border-radius: 2em;
-                width: 25%; 
-
-            
-            }
-        }
-    }
     /*Responsive diseinuaren amaiera*/
 }
