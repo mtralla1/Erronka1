@@ -8,9 +8,8 @@ services:
       - PGID=0
       - TZ=Europe/Madrid
     volumes:
-      - /root/odoo/Erronka1/config:/config
-      - /root/odoo/Erronka1/backups:/backups
-      - /root/odoo/Erronka1:/source
+      - duplicati-backups:/backups
+      - duplicati-source:/source
     ports:
       - 8200:8200
     restart: unless-stopped
@@ -61,6 +60,13 @@ volumes:
       device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
   
   duplicati-source:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
+
+  duplicati-config:
     driver: local
     driver_opts:
       type: none
