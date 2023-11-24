@@ -1,5 +1,11 @@
 version: '3.1'
 services:
+  odoo-web-data:
+    image: postgres:15  
+    volumes:
+      - type: bind
+        source: C:/Users/1ag3.miketell/Downloads/odoo/Erronka1/container/odoo-web-data
+        target: /var/lib/odoo
   duplicati:
     image: lscr.io/linuxserver/duplicati:latest
     container_name: duplicati
@@ -41,34 +47,11 @@ services:
 volumes:
   odoo-web-data:
     driver: local
-    driver_opts:
-      typer: none
-      o: bind
-      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
   odoo-db-data:
     driver: local
-    driver_opts: 
-      type: none
-      o: bind
-      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
-
   duplicati-backups:
     driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
-  
   duplicati-source:
     driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
-
   duplicati-config:
     driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: C:\Users\1ag3.miketell\Downloads\odoo\Erronka1\container
